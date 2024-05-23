@@ -34,3 +34,8 @@ async def remove_background(url: str):
         return output
     except Exception as e:
         return {"error": str(e)}
+
+
+ # at last, the bottom of the file/module
+if __name__ == "__main__":
+    uvicorn.run(app, host="127.0.0.1", port=5049)
